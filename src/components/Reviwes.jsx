@@ -6,7 +6,7 @@ function Reviews(){
     return(
 
         <>
-       <div className="heading">
+       <div className="heading" id="reviews">
          <h1 className="reviews-heading">Customer Reviews</h1>
        </div>
 
@@ -33,7 +33,7 @@ function Reviews(){
 
         
            
-            <div className="heading">
+            <div className="heading" id="o2-plants">
          <h1 className="besto2-heading">Our Best O2</h1>
        </div>
        <div className="besto2-container">
@@ -46,7 +46,7 @@ function Reviews(){
                   <p className="besto2-content">Oxygen-producing plants, often referred to as "O2 <br /> plants," are those that release oxygen into the <br /> atmosphere through the process of photosynthesis.</p>
                   <p className="besto2-content">Many plants can help filter out pollutants and toxins <br />from the air, such as formaldehyde, benzene, and <br /> trichloroethylene. This makes the air cleaner and <br /> healthier to breathe.</p>
                   <div className="besto2-plants-btns">
-                   <button className="explore-btn">Explore</button>
+                   <a href="#trending"><button className="explore-btn">Explore</button></a>
                   {/* <button><img src={parcel} alt="" className="parcel-btn" /></button> */}
                   </div>
                   

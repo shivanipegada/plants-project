@@ -7,7 +7,7 @@ function Plants(){
 
     <>
 
-     <div className="plants-container">
+     <div className="plants-container" id="top-selling-plants">
        <h1 className="plants-heading">Our Top Selling Plants</h1>
         {plantsData.map((plant) => (
           <div className="card" key={plant.id}>

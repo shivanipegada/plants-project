@@ -7,7 +7,7 @@ function Footer(){
     return(
         <>
 
-        <div className="footer-container">
+        <div className="footer-container" id="contact">
 
             <div className="footer-section-1">
 
@@ -20,9 +20,9 @@ function Footer(){
             </div>
 
             <div className="quick-links">
-                <a href="" className="link">Home</a>
-                <a href="" className="link">Type's Of Plants</a>
-                <a href="" className="link">Contact</a>
+                <a href="#earth-exhale-home" className="link">Home</a>
+                <a href="#top-selling-plants" className="link">Type's Of Plants</a>
+                <a href="#contact" className="link">Contact</a>
                 <a href="" className="link">Privacy</a> 
             </div>
 
@@ -30,10 +30,13 @@ function Footer(){
 
                 <h4>For Every Update</h4>
 
-                <div className="input-container">
-                <input type="email" placeholder="Enter Email" className="email" />
-                <button className="footer-btn">SUBSCRIBE</button>
-               </div>
+                 
+                 <form action=""  className="input-container">
+                  
+                  <input type="email" name="email" placeholder="Enter Email" className="email" required />
+                  <button type="submit" className="footer-btn">SUBSCRIBE</button>
+
+                 </form>
 
                <p class="footer-p1">FloraVision © all right reserve</p>
 
@@ -47,3 +50,9 @@ function Footer(){
 }
 
 export default Footer
+
+
+{/* <div className="input-container">
+                <input type="email" placeholder="Enter Email" className="email" />
+                <button className="footer-btn">SUBSCRIBE</button>
+               </div> */}

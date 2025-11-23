@@ -27,7 +27,7 @@ function Navbar(){
         </button>
 
         <ul className={open ? "nav-links open" : "nav-links"}>
-          <li><a href="#">Home</a></li>
+          <li><a href="#earth-exhale-home">Home</a></li>
           {/* <li><a href="#">Plant Type</a></li> */}
 
             <li className="dropdown">
@@ -40,8 +40,10 @@ function Navbar(){
          </ul>
          </li>
 
-          <li><a href="#">More</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#top-selling-plants">More</a></li>
+          <li><a href="#contact">Contact</a></li> 
+          {/* <li><a href="#" onClick={() => console.log("Contact clicked")}>Contact</a></li> */}
+
           <li><a href=""><img src={searchIcon} alt="" className="nav-icon" /></a></li>
           <li><a href=""><img src={parcel} alt="" className="nav-icon" /></a></li>
           <li><a href=""><img src= {menu} alt="" className="nav-icon" /></a></li>
@@ -49,17 +51,19 @@ function Navbar(){
       </nav>
     </header>
 
+     
      <div className="content-container">
 
-       <div className="sub-container-1">
+       <div className="sub-container-1" id="earth-exhale-home">
       <div className="earth-exhale">
         <h1 className="h1">Earth's Exhale</h1>
           <p className="p">“Earth Exhale” symbolizes the purity and vitality of the Earth's natural </p>
            <p className="p">environment. It reflects how the planet sustains life.</p> 
           <div className="button-row ">
-            <button className="btn">Buy Now</button>
+           <a href="#top-selling-plants"><button className="btn">Buy Now</button></a> 
             {/* <button className="btn-outline">live stream...</button> */}
-            <button className="button-1"> <img src={play} alt="" className="play-icon" />Live Demo...</button>
+           
+            <a href="#reviews"> <button className="button-1"> <img src={play} alt="" className="play-icon" />Live Demo...</button></a>
           </div>
       </div>
 
@@ -67,7 +71,7 @@ function Navbar(){
         <img src={aglaomenaplant} alt="" className="aglaomenaplant-image"/>
         <p className="plant">Indoor plant</p>
         <h3 className="plant">aglaonema plant</h3>
-        <button className="buy-btn">Buy Now</button>
+        <a href="#top-selling-plants"><button className="buy-btn">Buy Now</button></a>
       </div>
       
        </div>
@@ -87,7 +91,7 @@ function Navbar(){
       
 
        
-      <div className="trendy-plants">
+      <div className="trendy-plants" id="trending">
 
         <h1 className="trendy-plants-h1">Our Trendy Plants</h1>
 
@@ -101,8 +105,8 @@ function Navbar(){
             <p className="content">I recently added a beautiful desk decoration plant to my workspace, and it <br/> has made such a positive difference!</p>
             <h2>Rs.599/-</h2>
             <div className="trendy-plants-btns">
-             <button className="explore-btn">Explore</button>
-            <button className="parcel-btn1"><img src={parcel} alt="" className="parcel-img1"  /></button>
+             <a href="#top-selling-plants"><button className="explore-btn">Explore</button></a>
+            <a href="#o2-plants"><button className="parcel-btn1"><img src={parcel} alt="" className="parcel-img1"  /></button></a>
             </div>
             
          </div>
@@ -110,7 +114,7 @@ function Navbar(){
         </div>
 
 
-          <div className="trendy-plant-container">
+          <div className="trendy-plant-container" >
           <div className="rosegold-plant-img">
             <img src={rosegoldplant2} alt="" className="rosegold-image" />
           </div>
@@ -120,8 +124,8 @@ function Navbar(){
             <p className="content">The greenery adds a touch of nature and serenity to my desk, making it feel <br/> more inviting and calming</p>
             <h2>Rs.399/-</h2>
             <div className="trendy-plants-btns">
-             <button className="explore-btn">Explore</button>
-            <button className="parcel-btn1" ><img src={parcel} alt="" className="parcel-img1"  /></button>
+             <a href="#top-selling-plants"><button className="explore-btn">Explore</button></a>
+             <a href="#o2-plants"><button className="parcel-btn1" ><img src={parcel} alt="" className="parcel-img1" /></button></a>
             </div>
             
          </div>
@@ -131,8 +135,6 @@ function Navbar(){
 
 
       </div>
-
-
 
 
 
@@ -152,4 +154,4 @@ function Navbar(){
 
 
 
-export default Navbar 
+export default Navbar  
